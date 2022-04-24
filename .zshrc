@@ -9,4 +9,5 @@ antigen bundle command-not-found
 antigen theme zhann 
 antigen apply
 
-
+#Create a copy of pacman default, and add personal config
+alias pack='yay --config ~/.config/pacman/pacman.conf'
