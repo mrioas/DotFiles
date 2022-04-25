@@ -6,7 +6,7 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
-antigen theme zhann 
+antigen theme nicoulaj
 antigen apply
 
 #Create a copy of pacman default, and add personal config
