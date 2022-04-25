@@ -13,3 +13,9 @@ antigen apply
 alias pack='yay --config ~/.config/pacman/pacman.conf'
 #Create a VAR ENV for my files 
 export MYFILES='/run/media/mas/E8380E98380E65C2/Files/'
+#MY ALIAS
+alias lf='exa -a --icons --long'
+alias lfL='exa --long --icons'
+alias lfT='exa -R --tree --level=2'
+alias lfTT='exa -l -R --tree | fzf'
+alias lfR='exa -d -R --icons | fzf'
