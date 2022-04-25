@@ -11,3 +11,5 @@ antigen apply
 
 #Create a copy of pacman default, and add personal config
 alias pack='yay --config ~/.config/pacman/pacman.conf'
+#Create a VAR ENV for my files 
+export MYFILES='/run/media/mas/E8380E98380E65C2/Files/'
