@@ -19,5 +19,6 @@ alias lfL='exa --long --icons'
 alias lfT='exa -R --tree --level=2'
 alias lfTT='exa -l -R --tree | fzf'
 alias lfR='exa -d -R --icons | fzf'
+alias finder='find * -type f | fzf > selected'
 # Alias for  GIT
 alias git_S='git status --long -uno'
