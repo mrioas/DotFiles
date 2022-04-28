@@ -24,7 +24,7 @@ alias lR='exa -d -R --icons | fzf'
 alias finder='find * -type f | fzf > selected'
 # Alias for  GIT
 alias git_S='git status --long -uno'
-# TEXLIVE
+# TEXLIVE EDITING
 #export PATH='/usr/local/texlive/2022/bin/x86_64-linux'
 #export MANPATH='/usr/local/texlive/2022/texmf-dist/doc/man'
 #export INFOPATH='/usr/local/texlive/2022/texmf-dist/doc/info'
