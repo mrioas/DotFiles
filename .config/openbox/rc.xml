@@ -318,17 +318,27 @@
     <!-- customise -->
     <keybind key="C-space">
       <action name="Execute">
-        <command>lsd</command>
+        <command>dunstctl close</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-o">
+      <action name="Execute">
+        <command>dunstctl action</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-k">
+      <action name="Execute">
+        <command>dunstctl close-all</command>
+      </action>
+    </keybind>
+     <keybind key="C-A-l">
+      <action name="Execute">
+        <command>dunstctl history-pop</command>
       </action>
     </keybind>
     <keybind key="A-Tab">
       <action name="Execute">
         <command>rofi -show window</command>
-      </action>
-    </keybind>
-    <keybind key="W-l">
-      <action name="Execute">
-        <command>lsd</command>
       </action>
     </keybind>
     <keybind key="W-Delete">
