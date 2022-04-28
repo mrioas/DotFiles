@@ -1,26 +1,13 @@
 # compositor - background process + disable shadowing effects during session
-picom -CGb &
-
+picom -b &
 # notifications
 /usr/bin/dunst &
-
-# panel - taskbar, system tray, battery, clock
-tint2 &
-
-# network manager
-nm-applet &
-
 # Autostart
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/ &
-
+udiskie &
 # Set display from arandr saved script
 sh ~/.screenlayout/monitor.sh &
-
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
-# Wallpaper
-nitrogen --restore &
-
 # Low battery notifier
 ~/.config/openbox/scripts/low_bat_notifier.sh &
