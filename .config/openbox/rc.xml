@@ -323,7 +323,7 @@
     </keybind>
     <keybind key="C-A-o">
       <action name="Execute">
-        <command>dunstctl action</command>
+        <command>dunstctl context</command>
       </action>
     </keybind>
     <keybind key="C-A-k">
@@ -331,7 +331,7 @@
         <command>dunstctl close-all</command>
       </action>
     </keybind>
-     <keybind key="C-A-l">
+     <keybind key="C-A-h">
       <action name="Execute">
         <command>dunstctl history-pop</command>
       </action>
