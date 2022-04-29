@@ -129,12 +129,6 @@
       <y>10</y>
     </popupFixedPosition>
   </resize>
-    <margins>
-    <top>25</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
-  </margins>
   <dock>
     <position>TopLeft</position>
     <floatingX>0</floatingX>
@@ -397,7 +391,7 @@
     </application>
   </applications>
   <margins>
-   <top>30</top>
+   <top>35</top>
    <left>10</left>
    <right>10</right>
    <bottom>10</bottom>
