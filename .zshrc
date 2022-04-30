@@ -28,3 +28,11 @@ alias git_S='git status --long -uno'
 #export PATH='/usr/local/texlive/2022/bin/x86_64-linux'
 #export MANPATH='/usr/local/texlive/2022/texmf-dist/doc/man'
 #export INFOPATH='/usr/local/texlive/2022/texmf-dist/doc/info'
+fo() {
+  IFS=$'\n' out=("$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)")
+  key=$(head -1 <<< "$out")
+  file=$(head -2 <<< "$out" | tail -1)
+  if [ -n "$file" ]; then
+    [ "$key" = ctrl-o ] && open "$file" || ${EDITOR:-vim} "$file"
+  fi
+}
