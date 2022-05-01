@@ -148,6 +148,22 @@
 		    <execute>alacritty -e tmux</execute>
 	    </action>
     </keybind>
+    <keybind key="W-s-minus">
+	    <action name="Execute">
+		    <execute>~/.bin/mscript sys brightness -5</execute>
+	    </action>
+    </keybind>
+     <keybind key="W-s-equal">
+	    <action name="Execute">
+		    <execute>~/.bin/mscript sys brightness +5</execute>
+	    </action>
+    </keybind>
+mscript sys brightness -5
+    <keybind key="XF86AudioLowerVolume">
+	    <action name="Execute">
+		    <execute>~/.bin/mscript sys --player down</execute>
+	    </action>
+    </keybind>
     <keybind key="A-F2">
     <action name="Execute">
 	    <execute>rofi -show run</execute>
