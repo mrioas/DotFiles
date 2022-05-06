@@ -10,7 +10,8 @@ antigen theme mdev
 antigen apply
 
 #Create a copy of pacman default, and add personal config
-alias pack='yay --config ~/.config/pacman/pacman.conf'
+alias p='yay --config ~/.config/pacman/pacman.conf'
+alias e=$EDITOR
 #Create a VAR ENV for my files 
 export MYFILES='/run/media/mas/E8380E98380E65C2/Files/'
 export PATH=~/.bin:/home/mas/.local/bin:$PATH
@@ -25,7 +26,8 @@ alias finder='find * -type f | fzf > selected'
 # Alias for  GIT
 alias git_S='git status --long -uno'
 # TEXLIVE EDITING
-#export PATH='/usr/local/texlive/2022/bin/x86_64-linux'
+export PATH=~/.bin:/home/mas/.local/bin:$PATH
+export PATH='/usr/local/texlive/2022/bin/x86_64-linux':$PATH
 #export MANPATH='/usr/local/texlive/2022/texmf-dist/doc/man'
 #export INFOPATH='/usr/local/texlive/2022/texmf-dist/doc/info'
 fo() {
