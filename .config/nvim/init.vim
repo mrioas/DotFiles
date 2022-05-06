@@ -13,10 +13,14 @@
 " Install: yay -S neovim-plug
 " Next Step: PluginInstall into neovim
 call plug#begin('~/.config/nvim/autoload')
-"---------"
-" For Git "
-" --------"
+"-----------------"
+" Plugins for Git "
+" ----------------"
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 call plug#end()
+"-----------------------"
+" Configurations for Git
+"-----------------------"
+set updatetime=100
