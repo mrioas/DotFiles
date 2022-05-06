@@ -12,6 +12,11 @@
 "Repo: https://github.com/junegunn/vim-plug
 " Install: yay -S neovim-plug
 " Next Step: PluginInstall into neovim
-call plug#begin(~".config/nvim/autoload")
-
+call plug#begin('~/.config/nvim/autoload')
+"---------"
+" For Git "
+" --------"
+Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
