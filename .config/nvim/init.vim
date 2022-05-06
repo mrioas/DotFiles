@@ -24,3 +24,7 @@ call plug#end()
 " Configurations for Git
 "-----------------------"
 set updatetime=100
+"-----------------------
+" Global configurations
+"-----------------------
+set number
