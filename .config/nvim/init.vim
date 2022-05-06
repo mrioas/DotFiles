@@ -12,3 +12,6 @@
 "Repo: https://github.com/junegunn/vim-plug
 " Install: yay -S neovim-plug
 " Next Step: PluginInstall into neovim
+call plug#begin(~".config/nvim/autoload")
+
+call plug#end()
