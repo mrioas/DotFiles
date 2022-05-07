@@ -33,7 +33,7 @@ set updatetime=100
 " Global configurations
 "-----------------------
 set number
-let mapleader = ","
-map <Leader>a <Esc>:SignifyToggleHighlight<CR>
+let mapleader = ";"
+noremap <Leader>a <Esc>:SignifyToggleHighlight<CR>
 noremap <Leader>c <Esc>:G commit -uno % <CR>
 set clipboard=unnamedplus
