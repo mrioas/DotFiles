@@ -19,6 +19,11 @@ call plug#begin('~/.config/nvim/autoload')
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 "Plug 'airblade/vim-gitgutter'
+"-------------
+" Fuzzy Finder
+" ------------
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf',{'do':{-> fzf#install()}}
 call plug#end()
 "-----------------------"
 " Configurations for Git
@@ -31,3 +36,4 @@ set number
 let mapleader = ","
 map <Leader>a <Esc>:SignifyToggleHighlight<CR>
 noremap <Leader>c <Esc>:G commit -uno % <CR>
+set clipboard=unnamedplus
