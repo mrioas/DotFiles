@@ -163,9 +163,9 @@
 		    <execute>~/.bin/mscript sys --player down</execute>
 	    </action>
     </keybind>
-    <keybind key="XF86AudioLowerVolume">
+    <keybind key="XF86AudioRaiseVolume">
 	<action name="Execute">
-	  <execute>~/.bin/mscript sys player toggle</execute>
+	  <execute>~/.bin/mscript sys player up</execute>
 	</action>
     </keybind>
     <keybind key="XF86AudioMute">
