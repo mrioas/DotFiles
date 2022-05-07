@@ -37,3 +37,4 @@ let mapleader = ";"
 noremap <Leader>a <Esc>:SignifyToggleHighlight<CR>
 noremap <Leader>c <Esc>:G commit -uno % <CR>
 set clipboard=unnamedplus
+set noswapfile
