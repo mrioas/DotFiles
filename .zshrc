@@ -2,6 +2,7 @@
 source /usr/share/zsh/share/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
+antigen bundle hschne/fzf-git
 antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
