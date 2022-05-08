@@ -19,6 +19,10 @@ call plug#begin('~/.config/nvim/autoload')
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 "Plug 'airblade/vim-gitgutter'
+"-------------------"
+" Plugins for LaTeX
+" ------------------
+Plug 'lervag/vimtex'
 "-------------
 " Fuzzy Finder
 " ------------
@@ -38,3 +42,20 @@ noremap <Leader>a <Esc>:SignifyToggleHighlight<CR>
 noremap <Leader>c <Esc>:G commit -uno % <CR>
 set clipboard=unnamedplus
 set noswapfile
+"-------------------------"
+" Configuration for LaTeX
+" ------------------------
+let g:vimtex_compiler_latexmk = {
+    \ 'build_dir' : '',
+    \ 'callback' : 1,
+    \ 'continuous' : 1,
+    \ 'executable' : 'latexmk',
+    \ 'hooks'   : [] ,
+    \ 'options' : [
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=1',
+    \   '-interaction=nonstopmode',
+    \ ],
+    \}
+
