@@ -13,6 +13,7 @@ antigen apply
 #Create a copy of pacman default, and add personal config
 alias p='yay --config ~/.config/pacman/pacman.conf'
 alias e=$EDITOR
+alias d='zathura'
 #Create a VAR ENV for my files 
 export MYFILES='/run/media/mas/E8380E98380E65C2/Files/'
 export PATH=~/.bin:/home/mas/.local/bin:$PATH
