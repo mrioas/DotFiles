@@ -183,7 +183,7 @@
     <action name="MoveResizeTo">
 	    <x>-0</x>
 	    <y>+0</y>
-	    <width>30/100</width>
+	    <width>39/100</width>
 	    <height>100/100</height>
     </action>
     </keybind>
