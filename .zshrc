@@ -21,7 +21,8 @@ export EDITOR=nvim
 #MY ALIAS
 alias l='exa -a --icons --long'
 alias lL='exa --long --icons'
-alias lT='exa -R --tree --level=2'
+alias lT2='exa -R --tree --level=2 | fzf'
+alias lT3='exa -R --tree --level=3 | fzf'
 alias lTT='exa -l -R --tree | fzf'
 alias lR='exa -d -R --icons | fzf'
 alias finder='find * -type f | fzf > selected'
