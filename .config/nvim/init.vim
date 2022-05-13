@@ -23,6 +23,10 @@ Plug 'mhinz/vim-signify'
 " Plugins for LaTeX
 " ------------------
 Plug 'lervag/vimtex'
+"--------------
+" Color Plugins
+" -------------
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 "-------------
 " Fuzzy Finder
 " ------------
@@ -45,6 +49,9 @@ set noswapfile
 "-------------------------"
 " Configuration for LaTeX
 " ------------------------
+augroup filetype_tex
+    autocmd!
+    autocmd FileType tex setlocal foldmethod=marker
 let g:vimtex_compiler_latexmk = {
     \ 'build_dir' : '',
     \ 'callback' : 1,
@@ -58,4 +65,16 @@ let g:vimtex_compiler_latexmk = {
     \   '-interaction=nonstopmode',
     \ ],
     \}
-
+let g:vimtex_compiler_latexmk_engines = {
+        \ 'xelatex'          : '-xelatex',
+        \ '_'                : '-pdf',
+        \ 'pdfdvi'           : '-pdfdvi',
+        \ 'pdfps'            : '-pdfps',
+        \ 'pdflatex'         : '-pdf',
+        \ 'luatex'           : '-lualatex',
+        \ 'lualatex'         : '-lualatex',
+        \ 'context (pdftex)' : '-pdf -pdflatex=texexec',
+        \ 'context (luatex)' : '-pdf -pdflatex=context',
+        \ 'context (xetex)'  : '-pdf -pdflatex=''texexec --xtx''',
+        \}
+augroup END
