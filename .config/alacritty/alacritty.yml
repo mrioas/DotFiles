@@ -891,7 +891,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x42463a'
+    background: '0x292a2d'
     foreground: '0xffffdd'
 
   cursor:
@@ -909,7 +909,7 @@ colors:
     cyan:    '0xa5783c'
     white:   '0xFDFDFD'
   bright:
-    black:   '0x414458'
+    black:   '0xe2bb5c'
     red:     '0xd261bf'
     green:   '0x18E3C8'
     yellow:  '0xEBCB8B'
