@@ -13,7 +13,7 @@ antigen apply
 #Create a copy of pacman default, and add personal config
 alias p='yay --config ~/.config/pacman/pacman.conf'
 alias e=$EDITOR
-alias d='zathura'
+alias pdf='zathura'
 #Create a VAR ENV for my files 
 export MYFILES='/run/media/mas/E8380E98380E65C2/Files/'
 export PATH=~/.bin:/home/mas/.local/bin:$PATH
@@ -22,10 +22,12 @@ export EDITOR=nvim
 alias l='exa -a --icons --long'
 alias lL='exa --long --icons'
 alias lT2='exa -R --tree --level=2 | fzf'
+alias lf='exa -F | rg -v / | fzf'
 alias lT3='exa -R --tree --level=3 | fzf'
 alias lTT='exa -l -R --tree | fzf'
 alias lR='exa -d -R --icons | fzf'
 alias finder='find * -type f | fzf > selected'
+alias T="trash"
 # Alias for  GIT
 alias git_S='git status --long -uno'
 # TEXLIVE EDITING
@@ -40,4 +42,11 @@ fo() {
   if [ -n "$file" ]; then
     [ "$key" = ctrl-o ] && open "$file" || ${EDITOR:-vim} "$file"
   fi
+}
+export MBLOG='/run/media/mas/E8380E98380E65C2/Files/Git/mBlog'
+function yta () {
+	mpv --ytdl-format=bestaudio/best ytdl://ytsearch100:"$*"
+}
+function ytv () {
+	mpv --no-border --ytdl-format="bestvideo[height<=?240][fps<=?30][vcodec!=vp9]+bestaudio/best" ytdl://ytsearch100:"$*"
 }
