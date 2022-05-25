@@ -78,3 +78,8 @@ let g:vimtex_compiler_latexmk_engines = {
         \ 'context (xetex)'  : '-pdf -pdflatex=''texexec --xtx''',
         \}
 augroup END
+function! Pandoc() 
+    :!pandoc -f latex -t markdown --pdf-engine xelatex --toc --toc-depth 3 -o %.md %
+endfunction
+nnoremap <F5> :call Pandoc()<CR>
+imap <F5> <C-O>:call Pandoc()<CR>

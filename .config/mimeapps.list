@@ -10,3 +10,4 @@ x-scheme-handler/https=librewolf.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-BWBQK1.desktop
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 text/html=librewolf.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
