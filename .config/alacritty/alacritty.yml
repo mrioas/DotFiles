@@ -891,8 +891,8 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x292a2d'
-    foreground: '0xffffdd'
+    background: '0x111122'
+    foreground: '0xddffdd'
 
   cursor:
     text: '0x5aade8'
