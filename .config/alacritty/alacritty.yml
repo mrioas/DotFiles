@@ -895,8 +895,8 @@ colors:
     foreground: '0xddffdd'
 
   cursor:
-    text: '0x5aade8'
-    cursor: '0x5e5184'
+    text: '0x002a54'
+    cursor: '0xeccfb9'
  # Normal colors
   normal:
   # Bright colors
