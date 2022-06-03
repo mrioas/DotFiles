@@ -23,6 +23,7 @@ Plug 'mhinz/vim-signify'
 " Plugins for LaTeX
 " ------------------
 Plug 'lervag/vimtex'
+Plug 'w0rp/ale'
 "--------------
 " Color Plugins
 " -------------
@@ -41,6 +42,9 @@ set updatetime=100
 " Global configurations
 "-----------------------
 set number
+set expandtab
+set tabstop=2
+set mouse=a "n,v,i,,c,h,r,a:all previous mode"
 let mapleader = ";"
 noremap <Leader>a <Esc>:SignifyToggleHighlight<CR>
 noremap <Leader>c <Esc>:G commit -uno % <CR>
