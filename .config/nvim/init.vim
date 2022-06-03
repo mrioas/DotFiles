@@ -14,6 +14,10 @@
 " Next Step: PluginInstall into neovim
 call plug#begin('~/.config/nvim/autoload')
 "-----------------"
+" IDE thinking about Embedded devices
+"-----------------"
+Plug 'normen/vim-pio'
+"-----------------"
 " Plugins for Git "
 " ----------------"
 Plug 'tpope/vim-fugitive'
