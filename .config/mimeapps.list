@@ -5,9 +5,9 @@ x-scheme-handler/tg=userapp-Telegram Desktop-BWBQK1.desktop;
 [Default Applications]
 text/csv=libreoffice-calc.desktop;
 inode/directory=cutefish-filemanager.desktop;
-x-scheme-handler/http=librewolf.desktop;
-x-scheme-handler/https=librewolf.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-BWBQK1.desktop
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
-text/html=librewolf.desktop
+text/html=firefox.desktop
 x-scheme-handler/gitkraken=GitKraken.desktop
