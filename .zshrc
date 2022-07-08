@@ -18,6 +18,7 @@ alias pdf='zathura'
 export MYFILES='/run/media/mas/E8380E98380E65C2/Files/'
 export PATH=~/.bin:/home/mas/.local/bin:$PATH
 export EDITOR=nvim
+export BIB=/run/media/mas/E8380E98380E65C2/Files/Docs/Biblio/bibliography.bib
 #MY ALIAS
 alias l='exa -a --icons --long'
 alias lL='exa --long --icons'
@@ -50,3 +51,6 @@ function yta () {
 function ytv () {
 	mpv --no-border --ytdl-format="bestvideo[height<=?240][fps<=?30][vcodec!=vp9]+bestaudio/best" ytdl://ytsearch100:"$*"
 }
+# For conda
+source /opt/miniconda/etc/profile.d/conda.sh
+sudo ln -s /opt/miniconda/etc/profile.d/conda.sh /etc/profile.d/conda.sh
