@@ -6,4 +6,5 @@ Soy Mario, y estos son mis archivos punto, para la configuración de mi **Archli
 
 Hi, I'm Mario, these are my dotfiles, configuration of my **Archlinux**, the tools used are the follow:
 
-![Alt text](https://vc726.pcloud.com/dpZCa0hGPZBL8mKUZQL5AZZFfxIr7Z3VZZs4RZZ7R6aGybtJPLvkzurnteotVUEVPzy/sign.png)
+![Alt text](https://imgur.com/mUaT159)
+![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
