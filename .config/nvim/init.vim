@@ -18,6 +18,10 @@ call plug#begin('~/.config/nvim/autoload')
 "-----------------"
 Plug 'normen/vim-pio'
 "-----------------"
+"  Resembling VScode
+"-----------------"
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"-----------------"
 " Plugins for Git "
 " ----------------"
 Plug 'tpope/vim-fugitive'
