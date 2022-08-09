@@ -18,6 +18,14 @@ call plug#begin('~/.config/nvim/autoload')
 "-----------------"
 Plug 'normen/vim-pio'
 "-----------------"
+"_________________
+" For haskell
+" ---------------
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh'
+    \ }
+" -----------------
 "  Resembling VScode
 "-----------------"
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -41,6 +49,7 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " ------------
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf',{'do':{-> fzf#install()}}
+Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 call plug#end()
 "-----------------------"
 " Configurations for Git
@@ -58,6 +67,13 @@ noremap <Leader>a <Esc>:SignifyToggleHighlight<CR>
 noremap <Leader>c <Esc>:G commit -uno % <CR>
 set clipboard=unnamedplus
 set noswapfile
+"-------------------------"
+" Config for haskell
+"_________________________"
+augroup filetype_hs
+set rtp+=~/.vim/pack/XXX/start/LanguageClient-neovim
+let g:LanguageClient_serverCommands = { 'haskell': ['haskell-language-server-wrapper', '--lsp'] }
+augroup END
 "-------------------------"
 " Configuration for LaTeX
 " ------------------------
@@ -95,3 +111,13 @@ function! Pandoc()
 endfunction
 nnoremap <F5> :call Pandoc()<CR>
 imap <F5> <C-O>:call Pandoc()<CR>
+
+function! s:check_back_space() abort
+      let col = col('.') - 1
+      return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+		  \ pumvisible() ? "\<C-n>" :
+		  \ <SID>check_back_space() ? "\<TAB>" :
+		  \ coc#refresh()
