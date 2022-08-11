@@ -71,8 +71,9 @@ set noswapfile
 " Config for haskell
 "_________________________"
 augroup filetype_hs
-set rtp+=~/.vim/pack/XXX/start/LanguageClient-neovim
-let g:LanguageClient_serverCommands = { 'haskell': ['haskell-language-server-wrapper', '--lsp'] }
+"set rtp+=~/.vim/pack/XXX/start/LanguageClient-neovim
+"let g:LanguageClient_serverCommands = { 'haskell': ['haskell-language-server-wrapper', '--lsp'] }
+let g:ale_linters_ignore = {'haskell':['ghc']}
 augroup END
 "-------------------------"
 " Configuration for LaTeX
