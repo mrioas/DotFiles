@@ -896,7 +896,7 @@ colors:
 
   cursor:
     text: '0x002a54'
-    cursor: '0xeccfb9'
+    cursor: '0xec9cd8'
  # Normal colors
   normal:
   # Bright colors
@@ -910,7 +910,7 @@ colors:
     white:   '0xFDFDFD'
   bright:
     black:   '0xe2bb5c'
-    red:     '0xd261bf'
+    red:     '0x463f40'
     green:   '0x18E3C8'
     yellow:  '0xEBCB8B'
     blue:    '0x59675a'
