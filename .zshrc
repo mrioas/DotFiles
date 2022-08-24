@@ -1,3 +1,5 @@
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
 # Installed from AUR yay -S antigen-git
 source /usr/share/zsh/share/antigen.zsh
 antigen use oh-my-zsh
@@ -16,7 +18,8 @@ alias e=$EDITOR
 alias pdf='zathura'
 #Create a VAR ENV for my files 
 export MYFILES='/run/media/mas/E8380E98380E65C2/Files/'
-export PATH=~/.bin:/home/mas/.local/bin:$PATH
+export PATH=/home/mas/.stack/programs/x86_64-linux/ghc-tinfo6-9.0.2/bin:~/.bin:/home/mas/.local/bin:/home/mas/.cabal/bin:$PATH
+# export PATH=~/.bin:/home/mas/.local/bin:/home/mas/.cabal/bin:$PATH
 export EDITOR=nvim
 export BIB=/run/media/mas/E8380E98380E65C2/Files/Docs/Biblio/bibliography.bib
 #MY ALIAS
@@ -32,8 +35,7 @@ alias T="trash"
 # Alias for  GIT
 alias git_S='git status --long -uno'
 # TEXLIVE EDITING
-export PATH=~/.bin:/home/mas/.local/bin:$PATH
-export PATH='/usr/local/texlive/2022/bin/x86_64-linux':$PATH
+export PATH=~/.bin:/home/mas/.local/bin:'/usr/local/texlive/2022/bin/x86_64-linux':$PATH
 #export MANPATH='/usr/local/texlive/2022/texmf-dist/doc/man'
 #export INFOPATH='/usr/local/texlive/2022/texmf-dist/doc/info'
 fo() {
@@ -53,4 +55,5 @@ function ytv () {
 }
 # For conda
 source /opt/miniconda/etc/profile.d/conda.sh
-sudo ln -s /opt/miniconda/etc/profile.d/conda.sh /etc/profile.d/conda.sh
+eval "$(stack --bash-completion-script stack)"
+# sudo ln -s /opt/miniconda/etc/profile.d/conda.sh /etc/profile.d/conda.sh
