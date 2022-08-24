@@ -4,6 +4,7 @@ autoload -U +X bashcompinit && bashcompinit
 source /usr/share/zsh/share/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
+antigen bundle soimort/translate-shell
 antigen bundle hschne/fzf-git
 antigen bundle heroku
 antigen bundle pip

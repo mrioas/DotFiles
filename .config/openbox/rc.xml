@@ -163,9 +163,24 @@
               <execute>~/.bin/mscript sys player prev</execute>
 	    </action>
     </keybind>
+    <keybind key="KP_End">
+	    <action name="Execute">
+              <execute>~/.bin/mscript sys player prev</execute>
+	    </action>
+    </keybind>
     <keybind key="XF86AudioPlay">
 	    <action name="Execute">
               <execute>~/.bin/mscript sys player play-pause</execute>
+	    </action>
+    </keybind>
+    <keybind key="KP_Down">
+	    <action name="Execute">
+              <execute>~/.bin/mscript sys player play-pause</execute>
+	    </action>
+    </keybind>
+    <keybind key="KP_Next">
+	    <action name="Execute">
+              <execute>~/.bin/mscript sys player next</execute>
 	    </action>
     </keybind>
     <keybind key="XF86AudioNext">
@@ -313,6 +328,12 @@
         <command>scrot -s</command>
       </action>
     </keybind>
+    <keybind key="W-f">
+      <action name="ToggleAlwaysOnTop"/>
+      <action name="Execute">
+	      <command>~/.bin/mscript sys fixed_window</command>
+      </action>
+    </keybind>
     <keybind key="W-space">
       <action name="Execute">
 	<command>~/.bin/mscript sys keyboard</command>
@@ -369,7 +390,7 @@
         <command>dunstctl close</command>
       </action>
     </keybind>
-    <keybind key="C-A-o">
+    <keybind key="C-A-c">
       <action name="Execute">
         <command>dunstctl context</command>
       </action>

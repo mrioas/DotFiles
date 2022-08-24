@@ -106,7 +106,7 @@
     # ---- Icons ---- #
 
     # Align icons left/right/off
-    icon_position = left
+    icon_position = right
 
     # Scale small icons up to this size, set to 0 to disable.
     min_icon_size = 60
@@ -115,7 +115,7 @@
     max_icon_size = 60
 
     # Paths to default icons.
-    icon_path = /home/kai/.icons/Reversal-blue/apps/scalable:/usr/share/icons/Adwaita/256x256/legacy/
+    icon_path = /usr/share/icons/Crule/apps/scalable
 
 
     # --- History --- #
@@ -161,9 +161,9 @@
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_current
 [shortcuts]
-    close = ctrl+space
-    close_all = ctrl+shift+space
-    history = ctrl+shift+h
+    # close = ctrl+space
+    # close_all = ctrl+shift+space
+    # history = ctrl+shift+h
     #context = ctrl+shift+period
 
 [experimental]

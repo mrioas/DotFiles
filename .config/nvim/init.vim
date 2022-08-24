@@ -78,12 +78,20 @@ set number
 set expandtab
 set tabstop=4
 set softtabstop=4
+set autoindent
 set mouse=a "n,v,i,,c,h,r,a:all previous mode"
-let mapleader = ";"
+let mapleader = "-"
 noremap <Leader>a <Esc>:SignifyToggleHighlight<CR>
-noremap <Leader>c <Esc>:G commit -uno % <CR>
+noremap <Leader>gc <Esc>:G commit -uno % <CR>
 set clipboard=unnamedplus
 set noswapfile
+filetype plugin indent on
+syntax on
+set mouse=a
+"set cursorline 
+set ttyfast
+set spell
+set backupdir=~/.cache/vim
 "-------------------------"
 " Config for haskell
 "_________________________"
