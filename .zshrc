@@ -57,4 +57,5 @@ function ytv () {
 # For conda
 source /opt/miniconda/etc/profile.d/conda.sh
 eval "$(stack --bash-completion-script stack)"
+eval "$(starship init zsh)"
 # sudo ln -s /opt/miniconda/etc/profile.d/conda.sh /etc/profile.d/conda.sh
